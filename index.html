@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <script src="script.js" defer></script>
+    <title>Cineflix</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo"><img src="items/icons/Cineflix_logo.png" alt="no Logo"></a>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Mylist.html">My list</a></li>
+        </ul>
+        <a href="#" id="button"><button>Subscribe now</button></a>
+        </nav>
+        
+    </header>
+    <section class="home_1">
+       <div class="image"> <img src="items/images/wallpaperflare.com_wallpaper2.jpg" alt="no background"></div>
+        <div class="content">
+            <h1>FIND THE TOP RATED MOVIES</h1>
+            <p>StreamVibe is the best streaming experience for watching your favorite movies and shows on demand,
+                 anytime, anywhere. With StreamVibe, you can enjoy a wide variety of content, including the latest blockbusters,
+                  classic movies, popular TV shows, and more.
+                 You can also create your own watchlists, so you can easily find the content you want to watch.
+            </p>
+        </div>
+
+    </section>
+    <section class="home_2">
+        <div class="title">
+            <h2>Popular movies</h2>
+        </div>
+       <div class="caroussel">
+        
+            <div class="animation card_1">
+                <div class="image">
+                    <img src="items/images/bullet_train.png" alt="">
+                </div>
+            
+            </div>
+            <div class="animation card_2">
+                <div class="image">
+                    <img src="items/images/moonlight.jpg" alt="">
+                </div>
+            
+            </div>
+            <div class="animation card_3">
+                <div class="image">
+                    <img src="items/images/matrix.webp" alt="">
+                </div>
+            
+            </div>
+            <div class="animation card_4">
+                <div class="image">
+                    <img src="items/images/the_green_knight.jpg" alt="">
+                </div>
+            
+            </div>
+            <div class="animation card_5">
+                <div class="image">
+                    <img src="items/images/Thor.webp" alt="">
+                </div>
+            
+            </div>
+            <div class="animation card_6">
+                <div class="image">
+                    <img src="items/images/Thor.webp" alt="">
+                </div>
+            
+            </div>
+            <div class="animation card_7">
+                <div class="image">
+                    <img src="items/images/Thor.webp" alt="">
+                </div>
+            
+            </div>
+            <div class="animation card_8">
+                <div class="image">
+                    <img src="items/images/Thor.webp" alt="">
+                </div>
+            
+            </div>
+            <div class="animation card_9">
+                <div class="image">
+                    <img src="items/images/Thor.webp" alt="">
+                </div>
+            
+            </div>
+            
+       </div> 
+        
+    </section>
+    <section class="home_2-1">
+        <div class="title">
+            <h2>Browse trending movies</h2>
+
+        </div>
+       <div class="slider">
+        <i class="fa-solid fa-chevron-left" id="left" onclick="scrollToLeft()"></i>
+            <div class="slide">
+                <div class="carte card_1">
+                
+                    <img src="items/images/bullet_train.png" alt="">
+               
+            
+            </div>
+            <div class="carte card_2">
+                
+                    <img src="items/images/moonlight.jpg" alt="">
+                
+            
+            </div>
+            <div class="carte card_3">
+                
+                    <img src="items/images/matrix.webp" alt="">
+                
+            
+            </div>
+            <div class="carte card_4">
+                
+                    <img src="items/images/the_green_knight.jpg" alt="">
+                
+            
+            </div>
+            <div class="carte card_5">
+                
+                    <img src="items/images/Thor.webp" alt="">
+                
+            
+            </div>
+            <div class="carte card_6">
+                
+                    <img src="items/images/Thor.webp" alt="">
+               
+            
+            </div>
+            <div class="carte card_7">
+                <div class="image">
+                    <img src="items/images/Thor.webp" alt="">
+                </div>
+            
+            </div>
+            <div class="carte card_8">
+                <div class="image">
+                    <img src="items/images/Thor.webp" alt="">
+                </div>
+            
+            </div>
+            <div class="carte card_9">
+                <div class="image">
+                    <img src="items/images/Thor.webp" alt="">
+                </div>
+            
+            </div>
+            </div>
+        <i class="fa-solid fa-chevron-right" id="right" onclick="scrollToRight()"></i>
+            
+       </div> 
+        
+    </section>
+    <section class="home_3">
+        <div class="search">
+            <div class="title">
+                <h3>Search for your movie</h3>
+            </div>
+            <div class="searchbar"> 
+                <a href="" id="search_btn">search</a>
+                <input type="text" list="movies" id="searchbar" placeholder="Search...(Movie title,)" data-search>
+                
+                <a href="#"><img src="items/icons/search_icon.svg" alt="no icon"></a>
+            </div>
+        </div>
+        <div class="movies">
+            <div class="card">
+                <a href="details.html"><img src="items/images/Interstelllar.png" alt=""></a>
+                <h3>Interstelllar</h3>
+                
+            </div>
+            <div class="card">
+                <img src="items/images/Dark Knight.png" alt="">
+                <h3>Dark knight</h3>
+                <p>Action</p>
+            </div>
+            <div class="card">
+                <img src="items/images/Avengers.png" alt="">
+                <h3>Avengers</h3>
+                <p>Action</p>
+            </div>
+            <div class="card">
+                <img src="items/images/Inception.png" alt="">
+                <h3>Inception</h3>
+                <p>Mystery</p>
+            </div>
+            <div class="card">
+                <div class="image"><img src="items/images/Top_gun_maverick.png" alt=""></div>
+                <h3>Top gun maverick</h3>
+                <p>action</p>
+            </div>
+            <div class="card">
+                <img src="items/images/Pirates_of_the_carribean.png" alt="">
+                <h3>Pirates of the carribean</h3>
+                <p>2hr 10min . <span> Action</span></p>
+            </div>
+            <div class="card">
+                <img src="items/images/The lord of the rings.png" alt="">
+                <h3>The lord of the rings</h3>
+                <p>action</p>
+            </div>
+            <div class="card">
+                <img src="items/images/The wolf of wallstreet.png" alt="">
+                <h3>The wolf of wallstreet</h3>
+                <p>action</p>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="foot">
+            <div class="line1">
+                <div class="list">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="Mylist.html">My list</a></li>
+                    </ul>
+                </div>
+                <div class="lo_go">
+                    <a href="index.html" class="logo"><img src="items/icons/Cineflix_logo.png" alt="no Logo"></a>
+                </div>
+                <div class="button">
+                    <a href="#" id="button"><button>Subscribe now</button></a>
+                </div>
+            </div>
+            <div class="line2">  
+                <div class="copyright">
+                    <h5>&copy;Copyrights reserved</h5>
+                </div>
+                <div class="icons">
+                    <ul>
+                        <li><a href=""><img src="items/icons/facebook_icon_color.png" alt=""></a></li>
+                        <li><a href=""><img src="items/icons/twitter_icon_color.png" alt=""></a></li>
+                        <li><a href=""><img src="items/icons/linkedin.png" alt=""></a></li>
+                        <li><a href=""><img src="items/icons/instagram.png" alt=""></a></li>
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
