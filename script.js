@@ -1,4 +1,27 @@
+let darkmode = localStorage.getItem('darkmode');
+const theme = document.querySelector('.theme');
 
+const activerDarkMode = () => {
+    document.body.classList.add('darkmode');
+    localStorage.setItem('darkmode', 'active');
+}
+const desactiverDarkmode = () => {
+    document.body.classList.remove('darkmode');
+    localStorage.setItem('darkmode',null);
+}
+  
+if(darkmode === 'active') {
+    activerDarkMode();
+}
+
+theme.addEventListener("click", () => {
+    darkmode = localStorage.getItem('darkmode');
+    if(darkmode !== 'active'){
+        activerDarkMode();
+    }else {
+        desactiverDarkmode();
+    }
+})
 
 const movies = document.querySelectorAll(".card");
 const searchInput = document.getElementById("searchbar");
